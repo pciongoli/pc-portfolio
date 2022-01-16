@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #00004D;
+    --secondary-color: #66CCFF;
+    --tertiary-color: #FFEBCD;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +13,8 @@
 
 body {
     position: relative;
-    background-color: darkgrey;
-    color: blanchedalmond; 
+    background-color: #E6EAFF;
+    color: var(--secondary-color); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -30,7 +37,7 @@ header h1 {
     font-weight: bolder;
     margin: 0;
     font-size: 34px;
-    color: blanchedalmond;
+    color: var(--tertiary-color);
 }
 
 
@@ -48,13 +55,14 @@ header nav ul {
 
 header a {
     text-decoration: none;
-    color: blanchedalmond;
+    color: var(--tertiary-color);
 }
 
 header nav ul li a {
     padding: 12px 18px;
     font-weight: lighter;
     font-size: 1.25vw;
+    color: var(--secondary-color);
 }
 
 .profile {
@@ -72,58 +80,93 @@ header nav ul li a {
     width: 125px;
     height: auto;
     justify-content: flex-start;
+    padding: 10px 0 10px 15px;
 }
 
 .profile h2 {
     font-size: 1.65vw;
     align-items: flex-end;
+    color: var(--tertiary-color);
 
 }
-
-
 
 .about {
-    
-}
-
-
-#my-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
 }
 
-.myWork {
+.my-work {
+    display: flex;
+}
+
+.work-projects {
     width: 100%;
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+ 
 
-.myWork-heading {
+.project {
+    background-color: var(--secondary-color);
+    margin: 20px;
+    flex: 1;
+    
+}
+
+.project-heading {
+    color: var(--tertiary-color);
     padding: 25px;
     line-height: 1.1;
+    justify-content: center;
 }
 
-.myWork img {
-    width: 300px;
+.project-discription {
+    color: #E62600;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.project img {
+    width: 100%;
     height: auto;
 }
 
-.myWork-runBuddy {
+.project-runbuddy {
     background-image: url('../images/runBuddy_picture.jpg');
     background-size: cover;
-    width: 400px;
-    height: auto;
+    background-position: 50%;
 }
 
-.myWork-robotG {
+.project-robotg {
     background-image: url(../images/robotGladiator_picture.jpg);
     background-size: cover;
-    width: 400px;
-    height: auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 15px;
 }
 
 .section-title {
     width: 85%;
+    color: var(--primary-color);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.section-paragraph {
+    margin-right: 25px;
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
 }
