@@ -57,22 +57,73 @@ header nav ul li a {
     font-size: 1.25vw;
 }
 
-.profile h2 {
-    font-size: 1.65vw;
-
+.profile {
+    background-image: url(../images/header-background.jpg);
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .profile-pic {
-    width: 150px;
+    width: 125px;
     height: auto;
+    justify-content: flex-start;
 }
 
-.myWork-images {
+.profile h2 {
+    font-size: 1.65vw;
+    align-items: flex-end;
+
+}
+
+
+
+.about {
+    
+}
+
+
+#my-work {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.myWork {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.myWork-heading {
+    padding: 25px;
+    line-height: 1.1;
+}
+
+.myWork img {
+    width: 300px;
+    height: auto;
 }
 
 .myWork-runBuddy {
     background-image: url('../images/runBuddy_picture.jpg');
-    background-size: px;
+    background-size: cover;
+    width: 400px;
+    height: auto;
 }
 
+.myWork-robotG {
+    background-image: url(../images/robotGladiator_picture.jpg);
+    background-size: cover;
+    width: 400px;
+    height: auto;
+}
+
+.section-title {
+    width: 85%;
+}
