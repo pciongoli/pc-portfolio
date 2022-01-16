@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: darkgrey;
+    color: blanchedalmond; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: url('../images/header-background.jpg');
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bolder;
+    margin: 0;
+    font-size: 34px;
+    color: blanchedalmond;
+}
+
+
+header nav {
+    margin: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+header nav ul li a {
+    padding: 12px 18px;
+    font-weight: lighter;
+    font-size: 1.25vw;
+}
+
+.profile h2 {
+    font-size: 1.65vw;
+
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+}
+
+.myWork-images {
+    display: flex;
+}
+
+.myWork-runBuddy {
+    background-image: url('../images/runBuddy_picture.jpg');
+    background-size: px;
+}
+
