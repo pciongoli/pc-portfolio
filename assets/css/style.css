@@ -13,7 +13,7 @@
 
 body {
     position: relative;
-    background-color: #E6EAFF;
+    background-color: #666699;
     color: var(--secondary-color); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -99,14 +99,15 @@ header nav ul li a {
 
 .my-work {
     display: flex;
+    margin: 0 auto;
 }
 
 .work-projects {
     width: 100%;
     margin: 0 auto;
+    padding: 10px 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: start;
 }
  
 
@@ -119,6 +120,7 @@ header nav ul li a {
 
 .project-heading {
     color: var(--tertiary-color);
+    font-size: 26px;
     padding: 25px;
     line-height: 1.1;
     justify-content: center;
@@ -135,7 +137,6 @@ header nav ul li a {
 
 .project img {
     width: 100%;
-    height: auto;
 }
 
 .project-runbuddy {
@@ -151,16 +152,14 @@ header nav ul li a {
 
 .contact-info {
     display: flex;
-    flex-wrap: wrap;
-    padding: 25px 15px;
+    justify-content: space-between;
 }
 
 .section-title {
     width: 85%;
     color: var(--primary-color);
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .section-paragraph {
@@ -168,5 +167,4 @@ header nav ul li a {
     padding: 20px 20px;
     display: flex;
     flex-wrap: wrap;
-    float: right;
-}
+}  
