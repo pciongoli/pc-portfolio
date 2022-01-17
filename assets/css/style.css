@@ -12,7 +12,6 @@
 }
 
 body {
-    position: relative;
     background-color: #666699;
     color: var(--secondary-color); 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -98,14 +97,16 @@ header nav ul li a {
 }
 
 .my-work {
-    display: flex;
     margin: 0 auto;
+}
+
+.my-work-title {
+    color: var(--primary-color);
 }
 
 .work-projects {
     display: grid;
     margin: 0 auto;
-    justify-content: space-evenly;
 }
 
 .project {
@@ -153,8 +154,10 @@ figcaption {
 }
 
 
-.contact-info {
-    
+.contact-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .resume {
