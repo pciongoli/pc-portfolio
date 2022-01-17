@@ -115,6 +115,14 @@ header nav ul li a {
     padding: 20px;
     margin: 20px;
     flex: 1;
+}
+
+.project-image {
+    width: 250px;
+}
+
+.project-image:hover {
+    width: 300px;
     
 }
 
@@ -135,15 +143,43 @@ header nav ul li a {
     font-weight: bolder;
 }
 
+.work-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .project-a {
     background-image: url('../images/runBuddy_picture.jpg');
     background-size: cover;
     background-position: 50%;
+}
+
+.project-b {
+    background-image: url('../images/robotGladiator_picture.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.project-c {
+    background-image: url('../images/new-proj-1.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.project-d {
+    background-image: url('../images/new-proj-2.jpg');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.project-e {
+    background-image: url('../images/new-proj-3.jpg');
+    background-size: cover;
+    background-position: 50%;
     width: 200px;
     height: auto;
 }
-
  
 figcaption {
     position: absolute;
