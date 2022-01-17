@@ -77,10 +77,10 @@ header nav ul li a {
 }
 
 .profile-pic {
+    position: abosolute;
     width: 125px;
     height: auto;
-    justify-content: flex-start;
-    padding: 10px 0 10px 15px;
+    border: solid 5px var(--primary-color);
 }
 
 .profile h2 {
@@ -103,16 +103,20 @@ header nav ul li a {
 }
 
 .work-projects {
-    width: 100%;
+    display: grid;
     margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
     justify-content: start;
 }
  
+figcaption {
+    position: absolute;
+    color: var(--secondary-color);
+    border: solid var(--primary-color);
+    margin-top: -50px;
+    border: solid var(--secondary-color);
+}
 
 .project {
-    background-color: var(--secondary-color);
     margin: 20px;
     flex: 1;
     
@@ -135,19 +139,18 @@ header nav ul li a {
     font-weight: bolder;
 }
 
-.project img {
-    width: 100%;
+.project-img {
+    width: 200px;
+    height: auto;
+    border: solid;
 }
 
-.project-runbuddy {
+.project-a {
     background-image: url('../images/runBuddy_picture.jpg');
     background-size: cover;
     background-position: 50%;
-}
-
-.project-robotg {
-    background-image: url(../images/robotGladiator_picture.jpg);
-    background-size: cover;
+    width: 200px;
+    height: auto;
 }
 
 .contact-info {
@@ -156,10 +159,12 @@ header nav ul li a {
 }
 
 .section-title {
-    width: 85%;
-    color: var(--primary-color);
+    display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin: 25px 45px;
+    width: 80%;
+    align-items: center;
 }
 
 .section-paragraph {
